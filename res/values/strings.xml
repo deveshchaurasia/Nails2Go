@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nails2Go</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="skip_registration_german">REGISTRIERUNG UBERSPRINGEN</string>
+    <string name="skip_registration_eng">SKIP REGISTRATION</string>
+    <string name="welcome_german">WILLKOMMEN</string>
+    <string name="welcome_eng">WELCOME</string>
+    <string name="login_german">EINLOGGEN</string>
+    <string name="login_eng">LOGIN</string>
+    <string name="email_address_german">E-Mail Addresse</string>
+    <string name="email_address_eng">E-Mail Address</string>
+    <string name="not_registered_german">NOCH NICHT REGISTRIERT?</string>
+    <string name="not_registered_eng">NOT REGISTERED?</string>
+    <string name="show_location_on_the_map_german">LOCATION AUF DER KARTE ZEIGEN</string>
+    <string name="setup_n_info_german">EINSTELLUNGEN  &amp; INFOS</string>
+    <string name="cancel_registration_german">REGISTRIERUNG ABBRECHEN</string>
+    <string name="register_german">REGISTRIEREN</string>
+    <string name="pwd_german">Passwort</string>
+    <string name="confirm_pwd_german">Passwort bestätigen</string>
+    <string name="previous">&lt;</string>
+
+</resources>

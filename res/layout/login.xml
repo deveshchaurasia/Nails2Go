@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/login_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/login_welcome_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/welcome_german"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/menu_ash"
+            android:textSize="16pt" />
+
+        <EditText
+            android:id="@+id/login_email_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_welcome_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="29dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/email_address_german"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/login_email_id_tv"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/ash" />
+
+        <EditText
+            android:id="@+id/login_pwd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_email_id_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/login_pwd_tv"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/ash" />
+
+        <Button
+            android:id="@+id/login_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_pwd_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/black_rounded_rectangle"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="10pt"
+            android:text="@string/login_german"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+ <LinearLayout
+        android:id="@+id/mainscreen_bottom_bar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="30dp" >
+
+        <TextView
+            android:id="@+id/login_not_registered_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_registered_german"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/menu_ash" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/ash" />
+
+        <TextView
+            android:id="@+id/login_skip_registration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="@string/skip_registration_german"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/menu_ash" />
+    </LinearLayout>
+   
+
+    <ImageView
+        android:id="@+id/login_logo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/ic_launcher"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+</RelativeLayout>

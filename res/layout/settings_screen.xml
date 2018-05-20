@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_tranparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/settings_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Close"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/settings_pink" />
+
+    <TextView
+        android:id="@+id/settings_heading_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/settings_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="LOG OUT"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/settings_pink" />
+
+    <TextView
+        android:id="@+id/settings_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings_logout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="sd"
+         android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/settings_logged_in_as_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings_user_email"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="Logged in as:"
+        android:textStyle="bold"
+         android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_heading_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/pink_border_rectangle"
+        android:padding="10dp"
+        android:textSize="10pt"
+        android:text="NOTIFICATIONS OFF"
+        android:textColor="@color/settings_pink" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/settings_screen_notifications_are_disabled"
+        android:layout_marginTop="15dp"
+        android:background="@color/settings_pink" />
+
+    <TextView
+        android:id="@+id/settings_screen_notifications_are_disabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/black"
+        android:text="Notifications are disabled in"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="22:33"
+        android:textColor="@color/settings_pink"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

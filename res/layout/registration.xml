@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/registration_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registration_form"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="REGISTRATION"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/menu_ash"
+        android:textSize="16pt" />
+
+    <RelativeLayout
+        android:id="@+id/registration_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/registration_email_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/email_address_german"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/registration_email_box"
+            android:background="@color/ash" />
+
+        <EditText
+            android:id="@+id/registration_name_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_email_box"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/registration_name_box"
+            android:background="@color/ash" />
+
+        <EditText
+            android:id="@+id/registration_pwd_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_name_box"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/pwd_german"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/registration_pwd_box"
+            android:background="@color/ash" />
+
+        <EditText
+            android:id="@+id/registration_confirm_pwd_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_pwd_box"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/confirm_pwd_german"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/registration_confirm_pwd_box"
+            android:background="@color/ash" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registration_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registration_form"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/black_rounded_rectangle"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:text="@string/register_german"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/registration_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registration_form"
+        android:layout_below="@+id/registration_register_button"
+        android:layout_marginTop="39dp"
+        android:text="@string/cancel_registration_german"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/menu_ash" />
+
+</RelativeLayout>

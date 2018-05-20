@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <RelativeLayout
+        android:id="@+id/login_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" >
+        <include layout="@layout/login" />
+    </RelativeLayout>
+ <RelativeLayout
+        android:id="@+id/registraion_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" >
+        <include layout="@layout/registration" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/main_screen_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" >
+        <include layout="@layout/main_screen" />
+    </RelativeLayout>
+    
+<RelativeLayout
+        android:id="@+id/settings_screen_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" >
+        <include layout="@layout/settings_screen" />
+    </RelativeLayout>
+    
+    
+</RelativeLayout>
