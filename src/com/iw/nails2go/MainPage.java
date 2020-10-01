@@ -39,14 +39,14 @@ public class MainPage extends Fragment implements OnClickListener{
     	rootView.findViewById(R.id.main_page_next).setOnClickListener(this);
     	return rootView;
     }
-    
+    // Get View on root
     public View getMyView(){
 	   return rootView;
     }
 	public void show(){
 		
 	}
-
+// Set Image to Page
 	public void setImage(){
 		if(wait == 0){
 			img.setImageDrawable(appContext.getResources().getDrawable(R.drawable.low_wait));
